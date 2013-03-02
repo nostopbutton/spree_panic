@@ -1,0 +1,26 @@
+/* ----------------------------------------------------
+   created with http://www.texturepacker.com 
+   ----------------------------------------------------
+   $TexturePacker:SmartUpdate:6d76c9fef90dc01ce518ef7e8f02e76f$
+   ----------------------------------------------------
+
+   usage: <span class="{-spritename-} sprite"></span>
+
+   replace {-spritename-} with the sprite you like to use
+
+*/
+
+.view-sprite {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(../img/view-sprite.png);}
+
+.base-back {width:201px; height:478px; background-position: -0px -2286px}
+.base-base {width:201px; height:520px; background-position: -213px -0px}
+.base-front {width:201px; height:500px; background-position: -0px -808px}
+.base-left {width:201px; height:487px; background-position: -203px -1334px}
+.base-right {width:201px; height:489px; background-position: -203px -843px}
+.nolegs-back {width:211px; height:319px; background-position: -0px -0px}
+.nolegs-front {width:202px; height:319px; background-position: -204px -522px}
+.nolegs-left {width:201px; height:314px; background-position: -203px -2307px}
+.view-back {width:201px; height:488px; background-position: -0px -1310px}
+.view-front {width:202px; height:485px; background-position: -0px -321px}
+.view-left {width:201px; height:482px; background-position: -203px -1823px}
+.view-right {width:201px; height:484px; background-position: -0px -1800px}

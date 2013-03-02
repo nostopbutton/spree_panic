@@ -1,0 +1,29 @@
+<div id="loginModal" class="modal hide fade smallModal">
+      <div class="modal-header">
+        <a data-dismiss="modal" class="close"></a>
+        <h3>Log In</h3>
+      </div>
+      <div class="modal-body">
+        <%= simple_form_for :user, :html => { :class=>"form-horizontal", :id=>"login_form"}, :url => spree.user_session_path do |f|%>
+        <div id="password-credentials">
+          <p>
+            <%= f.email_field :email, :placeholder=>"Email", :class => 'title', :tabindex => 1 %>
+          </p>
+          <p>
+            <%= f.password_field :password, :autocomplete=>"off", :placeholder=>"Password", :class => 'title', :tabindex => 2 %>
+          </p>
+        </div>
+        <p>
+          <label>
+            <%= f.check_box :remember_me %>
+            <%= f.label :remember_me, t(:remember_me),  :tabindex => 3 %>
+          </label>
+        </p>
+        <% end %>
+      </div>
+      <div class="modal-footer">
+        <a href="#" data-dismiss="modal" class="btn">Close</a>
+        <button form="login_form" class="btn btn-primary create-button" type="submit">Login</button>        <!-- TODO:  t(:login) -->
+      </div>
+
+</div>

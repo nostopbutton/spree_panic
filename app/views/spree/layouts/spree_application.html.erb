@@ -1,0 +1,86 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html ng-app="myApp" class="ie ie6" lang="<%= I18n.locale %>"> <![endif]-->
+<!--[if IE 7 ]>    <html ng-app="myApp" class="ie ie7" lang="<%= I18n.locale %>"> <![endif]-->
+<!--[if IE 8 ]>    <html ng-app="myApp" class="ie ie8" lang="<%= I18n.locale %>"> <![endif]-->
+<!--[if IE 9 ]>    <html ng-app="myApp" class="ie ie9" lang="<%= I18n.locale %>"> <![endif]-->
+<!--[if gt IE 9]><!--><html ng-app="myApp" lang="<%= I18n.locale %>"><!--<![endif]-->
+<head data-hook="inside_head">
+  <%= render :partial => 'spree/shared/head' %>
+
+  <link rel="stylesheet" href="stylesheets/dress-sprite.css">
+  <link rel="stylesheet" href="stylesheets/icons-sprite.css">
+  <link rel="stylesheet" href="stylesheets/body-sprite.css">
+
+  <link rel="stylesheet" href="stylesheets/app.css">
+  <link rel="stylesheet" href="stylesheets/main.css">
+  <link rel="stylesheet" href="stylesheets/theme.css">
+</head>
+<body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
+
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
+
+    <%= render :partial => 'spree/shared/header' %>
+
+    <div class="container">
+
+        <div id="wrapper" class="row" data-hook>
+
+            <%= breadcrumbs(@taxon) %>
+
+            <%= render :partial => 'spree/shared/sidebar' if content_for? :sidebar %>
+
+            <div id="content" data-hook>
+
+              <% flash.each do |name, msg| %>
+                  <div class="alert alert-<%=(name == :notice && 'success' or name == :warning && 'warning' or name == :info && 'info' or 'error')%>">
+                    <a class="close" data-dismiss="alert">×</a>
+                    <%= msg %>
+                  </div>
+              <% end %>
+
+
+              <%= flash_messages %>
+              <%= yield %>
+            </div>
+
+        </div>
+    </div>
+
+    <%= render :partial => 'spree/shared/footer' %>
+
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>-->
+    <!--<script>window.jQuery || document.write('<script src="/lib/vendor/jquery-1.9.0.min.js"><\/script>')</script>-->
+
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>-->
+    <!--<script>window.jQuery.ui || document.write('<script src="/lib/vendor/jquery-ui-1.10.0.custom.min.js"><\/script>')</script>-->
+
+    <!--<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/js/bootstrap.min.js"></script>-->
+    <!--<script>$.fn.modal || document.write('<script src="js/lib/vendor/bootstrap.min.js"><\/script>')</script>-->
+
+    <!--&lt;!&ndash; Angular, CDN preferred - otherwise fallback. &ndash;&gt;-->
+    <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js"></script>-->
+    <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular-resource.min.js"></script>-->
+    <!--<script>window.angular || document.write('<script src="js/lib/angular/angular.min.js"><\/script><script src="js/lib/angular/angular-resource.min.js"><\/script>')</script>-->
+
+    <!--<script src="js/lib/angular-ui/angular-ui.min.js"></script>-->
+    <!--<script src="js/lib/imagesloaded/jquery.imagesloaded.min.js"></script>-->
+
+    <%= render :partial => 'spree/shared/foot' %>
+
+    <!--<script src="javascript/plugins.js"></script>-->
+
+    <!--<script src="js/appRoutes.js"></script>-->
+    <!--<script src="js/services.js"></script>-->
+    <!--<script src="js/controllers.js"></script>-->
+    <!--<script src="js/filters.js"></script>-->
+    <!--<script src="js/directives.js"></script>-->
+
+
+    <!--<script src="javascript/main.js"></script>-->
+
+    <%= render :partial => 'spree/shared/google_analytics' %>
+
+</body>
+</html>

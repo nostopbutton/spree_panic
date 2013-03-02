@@ -1,0 +1,9 @@
+
+<% if spree_current_user %>
+    <li><%= link_to t(:my_account), spree.account_path %></li>
+    <li><%= link_to t(:logout), spree.destroy_user_session_path %></li>
+<% else %>
+    <li id="link-to-login"><a data-toggle="modal" href="#loginModal"><%=  t(:login) %></a></li>
+    <li id="link-to-signup"><a data-toggle="modal" href="#myModal">SIGN-UP</a></li>
+    <li><a href="#wishlist">MY-WISHLIST</a></li>
+<% end %>

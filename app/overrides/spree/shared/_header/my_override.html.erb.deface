@@ -1,0 +1,43 @@
+<!-- replace '#header' -->
+<%= render :partial => 'spree/shared/login_modal' %>
+<%= render :partial => 'spree/shared/register_modal' %>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class= "container">
+            <div class="pull-left">
+                <%= link_to "NO NAME", spree.root_path, :class=>"logo" %>
+            </div>
+            <div class="pull-left">
+                <p class="handwriting">experience custom</p>
+            </div>
+            <div class="nav-collapse collapse">
+                <ul class="nav pull-right">
+                    <%= render :partial => 'spree/shared/login_bar' %>
+                    <li id="link-to-cart" data-hook><%= link_to_cart "MY-BAG" %></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="navbar-inverse">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <div class="nav-collapse collapse">
+                    <ul class="nav pull-left">
+                        <li><a href="#fit">BETTER FIT</a></li>
+                        <li><a href="#silouettes">SILOUETTES</a></li>
+                        <li class="active handwriting"><a href="design">START DESIGNS</a></li>
+                        <li><a href="#about">ABOUT US</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                        <li><a href="#ranges">ADMIN</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </div>
+    </div>
+</div>

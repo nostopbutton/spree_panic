@@ -1,0 +1,26 @@
+<div id="myModal" class="modal hide fade smallModal">
+      <div data-hook="signup_inside_form">
+        <div class="modal-header"><a data-dismiss="modal"  class="close"></a>
+          <h3>Sign Up Today</h3><!--TODO - translate signup text -->
+          <%= t(:or) %> <a data-toggle="modal" href="#loginModal"><%=  t(:login_as_existing) %></a>
+        </div>
+        <div class="modal-body">
+          <%= simple_form_for :user, :html => {:class=>"form-horizontal", :id=>"register_form"}, :autocomplete=>"off", :url => spree.user_registration_path(@user) do |f| %>
+              <%= render :partial => 'spree/shared/error_messages', :locals => { :target => @user } %>
+
+              <%= render :partial => 'spree/shared/user_form', :locals => { :f => f } %>
+          <% end %>
+
+        </div>
+        <div class="modal-footer">
+          <a href="#" data-dismiss="modal" class="btn">Close</a>
+          <button form="register_form" class="btn btn-primary create-button" type="submit"><%=  t(:create) %></button>
+        </div>
+      </div>
+      <div data-hook="login_extras"></div>
+
+
+
+</div>
+
+

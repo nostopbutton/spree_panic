@@ -1,0 +1,88 @@
+{
+
+    "title": "CLASSIC COCO RANGE",
+    "price": 1600,
+    "strapline": "use the buttons below to customise your dress",
+    "sizes": [1,2,3,4,5],
+    "views": ["front", "left", "back", "right"],
+    "default": {
+        "view": "front",
+
+        "bodice": {
+            "type": "bod-001",
+            "fabric": "001"
+        },
+        "skirt": {
+            "type": "skt-001",
+            "fabric": "001"
+        },
+        "sleeves": {
+            "type": "slv-001",
+            "fabric": "001"
+        },
+        "belt": {
+            "type": "blt-001",
+            "fabric": "003"
+        }
+     },
+
+    "bodice": [
+        {"name": "bod-001", "type": "bod-001"},
+        {"name": "bod-002", "type": "bod-002"},
+        {"name": "bod-003", "type": "bod-003"},
+        {"name": "bod-004", "type": "bod-004"},
+        {"name": "bod-005", "type": "bod-005"},
+        {"name": "bod-006", "type": "bod-006"},
+        {"name": "bod-007", "type": "bod-007"},
+        {"name": "bod-008", "type": "bod-008"}
+    ],
+    "bodice_fabric": [
+        {"name": "red",     "type": "001"},
+        {"name": "blue",    "type": "002"},
+        {"name": "black",   "type": "003"},
+        {"name": "green",   "type": "004"}
+    ],
+
+    "skirt": [
+        {"name": "skt-001", "type": "skt-001"},
+        {"name": "skt-002", "type": "skt-002"},
+        {"name": "skt-003", "type": "skt-003"},
+        {"name": "skt-004", "type": "skt-004"},
+        {"name": "skt-005", "type": "skt-005"},
+        {"name": "skt-006", "type": "skt-006"}
+    ],
+    "skirt_fabric": [
+        {"name": "red",     "type": "001"},
+        {"name": "blue",    "type": "002"},
+        {"name": "black",   "type": "003"},
+        {"name": "green",   "type": "004"}
+    ],
+    "sleeves": [
+        {"name": "slv-000", "type": "slv-000"},
+        {"name": "slv-001", "type": "slv-001"},
+        {"name": "slv-002", "type": "slv-002"},
+        {"name": "slv-003", "type": "slv-003"},
+        {"name": "slv-004", "type": "slv-004"},
+        {"name": "slv-005", "type": "slv-005"},
+        {"name": "slv-006", "type": "slv-006"},
+        {"name": "slv-007", "type": "slv-007"}
+    ],
+    "sleeves_fabric": [
+        {"name": "red",     "type": "001"},
+        {"name": "blue",    "type": "002"},
+        {"name": "black",   "type": "003"},
+        {"name": "green",   "type": "004"}
+    ],
+
+    "belt": [
+        {"name": "blt-000", "type": "blt-000"},
+        {"name": "blt-001", "type": "blt-001"}
+    ],
+    "belt_fabric": [
+        {"name": "red",     "type": "001"},
+        {"name": "blue",    "type": "002"},
+        {"name": "black",   "type": "003"},
+        {"name": "green",   "type": "004"}
+    ]
+
+}

@@ -1,0 +1,14 @@
+<fieldset>
+<div class="control-group">
+  <%= f.email_field :email, :autocomplete=>"off", :placeholder=>"Email", :class => 'title' %>   <!-- TOOO - class="input-xlarge"> -->
+</div>
+<div id="password-credentials">
+  <div class="control-group">
+    <%= f.password_field :password, :autocomplete=>"off", :placeholder=>"Password", :class => 'title' %>
+  </div>
+  <div class="control-group">
+    <%= f.password_field :password_confirmation, :autocomplete=>"off", :placeholder=>"Confirm Password", :class => 'title' %>
+  </div>
+</div>
+</fieldset>
+<div data-hook="signup_below_password_fields"></div>
