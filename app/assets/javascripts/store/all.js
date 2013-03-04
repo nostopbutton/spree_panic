@@ -10,11 +10,6 @@
 // This can be customized as per https://github.com/seyhunak/twitter-bootstrap-rails/tree/master/vendor/assets/javascripts/twitter
 //= require bootstrap
 
-//= require angular
-//= require angular-resource
-
-
-//= require angular-ui
 
 //= require store/spree_core
 //= require store/spree_promo

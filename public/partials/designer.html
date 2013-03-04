@@ -85,9 +85,7 @@
                             <fieldset name="bodice_choice" form="selection_form">
                                 <span ng-repeat="bodice in range.bodice">
                                     <input type="radio" ng-model="form.bodice.type" ui-jq="button" name="bodice_choice" id="{{bodice.type}}" value="{{bodice.type}}">
-                                    <!--<label ng-model="form.bodice.type" for="{{bodice.name}}"><img ng-src="img/2.3-{{bodice.name}}.png" class="selector option"></label>-->
                                     <label ng-model="form.bodice.type" for="{{bodice.type}}"><div class="icons-sprite {{bodice.type}}"></div></label>
-
                                 </span>
                             </fieldset>
                         </div>

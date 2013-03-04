@@ -26,7 +26,9 @@ group :assets do
   gem 'font-awesome-sass-rails'
 
   gem 'angularjs-rails'
-  gem 'angular-ui-rails'
+  #gem 'angular-ui-rails'
+
+  gem 'diffy'
 end
 
 gem 'jquery-rails'
@@ -49,3 +51,6 @@ gem 'spree', '1.3.2'
 gem 'spree_gateway'
 gem 'spree_auth_devise'
 gem 'simple_form'
+#gem 'spree_myriad_options', :git => 'git://github.com/sbeam/spree_myriad_options.git'
+#gem 'spree_flexi_variants', :git=>'git@github.com:jsqu99/spree_flexi_variants.git'
+gem "spree_product_assembly", :git => "git://github.com/spree/spree-product-assembly.git" # Official

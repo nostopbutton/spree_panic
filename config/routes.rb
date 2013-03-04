@@ -13,6 +13,7 @@ Htdocs::Application.routes.draw do
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
   match '/design' => "spree/design#range"
+  get '/products/customize/:id' => 'spree/products#customize', :as => :customize_product
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase

@@ -7,13 +7,53 @@
 <head data-hook="inside_head">
   <%= render :partial => 'spree/shared/head' %>
 
-  <link rel="stylesheet" href="stylesheets/dress-sprite.css">
-  <link rel="stylesheet" href="stylesheets/icons-sprite.css">
-  <link rel="stylesheet" href="stylesheets/body-sprite.css">
+  <meta name="viewport" content="width=device-width">
+  <!--[if lte IE 8]>
+  <script>
+      // The ieshiv takes care of our ui.directives, bootstrap module directives and
+      // AngularJS's ng-view, ng-include, ng-pluralize and ng-switch directives.
+      // However, IF you have custom directives (yours or someone else's) then
+      // enumerate the list of tags in window.myCustomTags
 
-  <link rel="stylesheet" href="stylesheets/app.css">
-  <link rel="stylesheet" href="stylesheets/main.css">
-  <link rel="stylesheet" href="stylesheets/theme.css">
+      // window.myCustomTags = [ 'yourDirective', 'somebodyElsesDirective' ]; // optional
+  </script>
+  <script src="/javascript/lib/angular-ui/angular-ui-ieshiv.min.js"></script>
+  <![endif]-->
+
+  <link rel="stylesheet" href="/stylesheets/vendor/bootstrap.min.css">
+  <style>
+      body {
+          padding-top: 60px;
+          padding-bottom: 40px;
+      }
+  </style>
+  <link rel="stylesheet" href="/stylesheets/vendor/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="/stylesheets/vendor/angular-ui.min.css">
+  <!--<link rel="stylesheet" href="css/normalize.css">--> <!-- TODO -  do I need normalize? -->
+  <link rel="stylesheet" href="/stylesheets/main.css">
+  <link rel="stylesheet" href="/stylesheets/dress-sprite.css">
+  <link rel="stylesheet" href="/stylesheets/icons-sprite.css">
+  <link rel="stylesheet" href="/stylesheets/body-sprite.css">
+
+  <!-- Added by me -->
+  <link rel="stylesheet" type="text/css" href="/stylesheets/theme.css"><!-- TODO - should extract footer-->
+  <link rel="stylesheet" href="/stylesheets/vendor/smoothness/jquery-ui-1.10.0.custom.min.css"> <!-- JQuery UI used to create radio buttons-->
+
+  <link href='http://fonts.googleapis.com/css?family=Arimo|La+Belle+Aurore|Aclonica|Krona+One|Nothing+You+Could+Do|Arizonia|Dancing+Script' rel='stylesheet' type='text/css'>
+
+  <script src="/javascript/lib/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <link rel="stylesheet" href="/stylesheets/app.css"/>
+
+
+
+  <!--<link rel="stylesheet" href="/stylesheets/dress-sprite.css">-->
+  <!--<link rel="stylesheet" href="/stylesheets/icons-sprite.css">-->
+  <!--<link rel="stylesheet" href="/stylesheets/body-sprite.css">-->
+
+
+  <!--<link rel="stylesheet" href="/stylesheets/main.css">-->
+  <!--<link rel="stylesheet" href="/stylesheets/theme.css">-->
+  <!--<link rel="stylesheet" href="/stylesheets/app.css">-->
 </head>
 <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
 
